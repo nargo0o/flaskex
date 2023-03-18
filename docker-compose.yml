@@ -1,0 +1,11 @@
+version: "3"
+services:
+  flask:
+    image: flaskex
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - .:/app
+    command: ["python", "app.py"]
+
